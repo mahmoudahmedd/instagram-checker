@@ -35,8 +35,20 @@ img { max-width: 100%; }
 
 ::-moz-selection { background: #19b9e7; color: #fff; text-shadow: none; }
 ::selection { background: #19b9e7; color: #fff; text-shadow: none; }
-
-
+.preloader {
+width: 20px;
+height: 20px;
+background: url('/preloader.png');
+background-size: 20px 20px;
+background-repeat: no-repeat;
+background-position: center;
+margin:0px auto 20px auto;
+padding: 4px 0;
+}
+.registration-form{
+	display: block;
+    margin-top: 0em;
+}
 .btn-link-1 {
 	display: inline-block;
 	height: 50px;
@@ -147,7 +159,9 @@ img { max-width: 100%; }
 .form-bottom form button.btn {
 	width: 100%;
 }
-
+button.btn {
+	width: 100%;
+}
 .form-bottom form .input-error {
 	border-color: #19b9e7;
 }
