@@ -1,6 +1,4 @@
 <?php
-include "header.php";
-include "functions.php";
 if( !(isset($_GET['a'])) )
 {
     header("Location: index.php?a=check");
@@ -10,7 +8,8 @@ else
     if($_GET['a'] != "check" and $_GET['a'] != "register")
         header("Location: index.php?a=check");
 }
-
+include "header.php";
+include "functions.php";
 ?>
 
 <!-- Top content -->
@@ -54,6 +53,10 @@ else
                     		</div>
                         </div>
                         <div class="form-bottom">
+                            <div id="load-bar"></div>
+                            <span id="usernames-count"></span>
+                            <br>
+                            <span id="valid-usernames-count"></span>
 		                    <?php main($_GET['a']) ?>
 	                    </div>
                 	</div>
@@ -69,10 +72,4 @@ else
 <?php
 include "footer.php";
 ?>
-
-
-
-
-
-
 
